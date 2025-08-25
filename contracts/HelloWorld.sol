@@ -6,6 +6,6 @@ contract HelloWorld {
     /// @notice Returns the string "HelloWorld"
     /// @dev This is a pure function with no state modification or input
     function hello() public pure returns (string memory) {
-        return "HelloWorld";
+        return "Hello, World!";
     }
 }

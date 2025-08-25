@@ -1,0 +1,15 @@
+// This file configures TypeScript settings for your Hardhat project.
+// It is required so TypeScript knows how to compile and check your code.
+// Hardhat uses this file to find and compile TypeScript files in your project.
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2020",
+    "outDir": "dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": ["./scripts", "./test", "./typechain-types", "./deploy", "./tasks"]
+}

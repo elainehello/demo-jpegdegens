@@ -10,6 +10,14 @@ describe("hello world", function() {
     // Test case to check if the contract says "HelloWorld"
     it("should say hi", async function() {
 
-        const HelloWorld = ethers.getContractFactory("HelloWorld");
+        // Get the contract factory for HelloWorld
+        const HelloWorld = await ethers.getContractFactory("HelloWorld");
+        // Deploy a new instance of the HelloWorld contract
+        const hello = await HelloWorld.deploy();
+        // Wait for the deployment to be completed
+        await hello.deployed();
+
+        // Call the hello() function and check the returned value
+        expect(await hello.hello()).to.equal("Hello, World!");
     });
 });
