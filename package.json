@@ -1,0 +1,10 @@
+{
+  "name": "demo-jpegdegens",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "elaine <195331169+elainehello@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "hardhat": "^2.14.0"
+  }
+}
