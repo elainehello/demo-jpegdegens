@@ -19,3 +19,8 @@
 
     RUN:
 >$  yarn add -D chai @types/node @types/mocha @types/chai
+
+# Pretty-prints the JSON output of the compiled HelloWorld contract using jq for easier reading
+
+    RUN:
+>$  cat artifacts/contracts/HelloWorld.sol/HelloWorld.json | jq
