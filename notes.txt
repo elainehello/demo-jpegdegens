@@ -1,0 +1,9 @@
+# Installs development dependencies for Hardhat and Ethereum smart contract testing:
+# - @nomiclabs/hardhat-ethers: Hardhat plugin for ethers.js integration
+# - ethers: Ethereum JavaScript library for interacting with the blockchain
+# - @nomiclabs/hardhat-waffle: Hardhat plugin for Waffle testing framework
+# - ethereum-waffle: Library for writing and testing smart contracts
+# - chai: Assertion library for testing
+
+    RUN:
+>$  add -D @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai
