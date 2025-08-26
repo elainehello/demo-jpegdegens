@@ -24,3 +24,16 @@
 
     RUN:
 >$  cat artifacts/contracts/HelloWorld.sol/HelloWorld.json | jq
+
+# Starts a local Hardhat Ethereum node for development and testing.
+# This command will deploy an Ethereum network on your local computer.
+# WARNING: The accounts and private keys shown are for local use only and are publicly known.
+# Never use these accounts or keys on mainnet or any public network.
+
+    RUN:
+>$  npx hardhat node
+
+# Run the deploy script from the /scripts directory using the localhost network
+
+    RUN:
+>$  npx hardhat run scripts/deploy-hello.ts --network localhost
